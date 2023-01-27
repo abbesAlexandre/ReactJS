@@ -1,73 +1,68 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background-color: #3d3d3d;
-  color: #dcdde1;
+* {
+    box-sizing: border-box;
 }
 
-.body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #282D35;
 }
 
-/**** HEADER ****/
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #16151d;
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px 25px;
 }
 
-.nav-logo {
-  width: 70px;
-  margin-left: 3%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+.nav--logo_text, .nav--title {
+    margin: 0;
 }
 
-.nav-items {
-  list-style: none;
-  display: flex;
-  font-weight: bold;
-  margin-right: 3%;
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
 }
 
-.nav-items > li {
-  padding: 10px;
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 600;
 }
 
-.nav-items > li:hover {
-  color: white;
-  box-shadow: 0px 2px 0px #747d8c;
-}
-/**** MAIN CONTENT ****/
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2%;
+.nav--icon {
+    height: 30px;
+    margin-right: 7px;
 }
 
-.main-item > li {
-  font-weight: bold;
+main {
+    padding: 57px 27px;
+    color: white;
+    background-image: url(./images/react-icon-large.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
 }
 
-.main-item > li:not(:last-child) {
-  margin-bottom: 10px;
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
 }
 
-/**** FOOTER ****/
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3.5rem;
-  background-color: #16151d;
+.main--facts > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
 }
